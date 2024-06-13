@@ -1,0 +1,26 @@
+<div class="container mt-5 mb-5">
+    <!-- <h1 class="text-left">Single Page</h1> -->
+    <div class="row">
+        <div class="col-lg-6" *ngIf="menuData">
+            <div>            
+                <a href="../menu/" class="btn btn-sm btn-warning mb-2">Voltar</a>
+            </div>
+
+            <img src="{{menuData[0].equimentImg}}" width="100%"/>
+            <h1>{{menuData[0].equimentName}}</h1>
+            <p>{{menuData[0].equimentDetail}}</p>
+            <p>{{menuData[0].equimentPrice | currency:'EUR'}}</p>
+
+        </div>
+
+        <div class="col-lg-6">
+            <h1 class="text-center">Informação Cliente</h1>
+            <form action="">
+                <input type="text" class="form-control" placeholder="Nome completo"/>
+                <input type="text" class="form-control" placeholder="Telefone"/>
+                <textarea class="form-control" placeholder="Endereço"></textarea>
+                <button class="btn btn-md btn-success mt-3">Fazer Pedido</button>
+            </form>
+        </div>
+    </div>
+</div>

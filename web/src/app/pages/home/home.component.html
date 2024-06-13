@@ -1,0 +1,45 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-2">Home works!</h1>
+        <a href="about"> About <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+
+<div class="container mt-5 mb-4">
+    <h1 class="text-center">Passos</h1>
+    <div class="row">
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>1</h1>
+                <p>Selecionar Tipo</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>2</h1>
+                <p>Preenche os detalhes</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="Box">
+                <h1>3</h1>
+                <p>Entrega de pedido</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Mais comprados</h1>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let fd of equipmentsData; index as i">
+            <div class="equipmentbox" *ngIf="i<=3">
+                <img src="{{fd.equimentImg}}"/>
+                <h1>{{fd.equimentName}}</h1>
+                <p>{{fd.equimentPrice | currency:'EUR'}}</p>
+            </div>
+        </div>
+    </div>
+    <a href="menu" class="maisopcoes"> + Opções <i class="bi bi-arrow-right"></i></a>
+</div>
+  

@@ -1,0 +1,14 @@
+<div class="container mt-4 mb-5">
+    <h1 class="text-center">Menu</h1>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let fd of equipmentsData">
+            <div class="equipmentbox">
+                <img src="{{fd.equimentImg}}"/>
+                <h1>{{fd.equimentName}}</h1>
+                <p>{{fd.equimentDetail}}</p>
+                <p>{{fd.equimentPrice | currency:'EUR'}}</p>
+                <a class="btn_pedido" href="menu/{{fd.id}}"> Fazer Pedido <i class="bi bi-bag-fill"></i> </a>
+            </div>
+        </div>
+    </div>
+</div>

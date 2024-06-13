@@ -1,0 +1,85 @@
+.banner{
+    background-image: url(../../assets/img/banner.jpg);
+    height: 300px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.content{
+    top: 10%;
+    left: 2%;
+    position: absolute;
+}
+
+.content h1{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content a{
+    text-decoration: none;
+    background-color:cadetblue;
+    color: blueviolet;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.content a:hover{
+    background-color: blueviolet;
+    color: white;
+
+}
+
+.Box{
+    background-color: rgb(66,60,60);
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.Box h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.Box p{
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
+.equipmentbox{
+    padding: 10px 5px;   
+}
+
+.equipmentbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.equipmentbox h1{
+    font-size: 18px;
+    margin-top: 20 px;
+    font-weight: bold;
+}
+
+.maisopcoes{
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* @media screen and (max-width:600px){}  
+---------------------------------------
+Situação de img para ecra de telemovel
+Inspecionar (no site) / Ctrl + Shift + M
+*/

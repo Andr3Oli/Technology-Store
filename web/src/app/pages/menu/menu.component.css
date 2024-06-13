@@ -1,0 +1,26 @@
+.equipmentbox{
+    padding: 10px 5px;   
+}
+
+.equipmentbox img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.equipmentbox h1{
+    font-size: 18px;
+    margin-top: 20 px;
+    font-weight: bold;
+}
+
+.btn_pedido{
+    color: rgb(250, 193, 86);
+    background-color: rgb(85, 85, 231);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
